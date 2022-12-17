@@ -1,0 +1,39 @@
+*{
+    font-size: 30px;
+}
+article{
+    text-align: center;
+}
+.name{
+    width: 300px;
+    margin: auto;
+    margin-top: 30px;
+    position: relative;
+}
+.name::after{
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: blue;
+    content: "";
+	transition: width 1s;
+}
+.name:hover::after{
+    width: 100%;
+}
+.name::before{
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 0;
+    height: 3px;
+    background-color: yellow;
+    content: "";
+	transition: width 1s;
+}
+.name:hover::before{
+    width: 100%;
+}
+
