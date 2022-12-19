@@ -1,39 +1,60 @@
-*{
-    font-size: 30px;
+:root{
+    --size-avatar: 100px;
+    --bg-color-card: teal;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-article{
+*{
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.cards-container{
+    margin: auto;
+    background-color: pink;
+}
+.flex-wrapper{
+    display: flex;
+    justify-content: space-around; 
+}
+.user-card{
+    flex: 0 0  calc(4*var(--size-avatar));
+    padding-top: var(--size-avatar);
+    background-color: var(--bg-color-card);
     text-align: center;
 }
-.name{
-    width: 300px;
-    margin: auto;
-    margin-top: 30px;
-    position: relative;
+.user-info{
+    background-color: white;
 }
-.name::after{
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: blue;
-    content: "";
-	transition: width 1s;
+.user-avatar{
+    width: var(--size-avatar);
+    height: var(--size-avatar);
+    margin-top: calc(-0.5*var(--size-avatar));
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
 }
-.name:hover::after{
-    width: 100%;
-}
-.name::before{
-    display: block;
-    position: absolute;
-    right: 0;
-    width: 0;
-    height: 3px;
-    background-color: yellow;
-    content: "";
-	transition: width 1s;
-}
-.name:hover::before{
-    width: 100%;
-}
+.user-name{
 
+}
+.user-adress{
+
+}
+.user-header,
+.container-btn{
+    text-transform: capitalize;
+}
+.container-btn{
+
+}
+.user-discription{
+
+}
+.social-list{
+
+}

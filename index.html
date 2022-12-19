@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
-</head>
-<body>
-    <article>
-        <h1 class="name"><span class="span">Dmytro Lymarenko</span></h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim fugit suscipit sapiente neque iure nihil porro voluptatum, eum natus numquam consectetur pariatur voluptate eveniet commodi nisi non excepturi consequatur dolor doloribus tempore odio ullam perspiciatis. Impedit ad pariatur praesentium ut ea. Laboriosam, aspernatur tenetur itaque iure possimus sunt alias nihil.</p>
-    </article>
-</body>
+  </head>
+  <body>
+    <section class="cards-container">
+      <h1>Users cards</h1>
+      <div class="flex-wrapper">
+        <article class="user-card">
+          <section class="user-info">
+            <header class="user-header">
+              <img
+                class="user-avatar"
+                src="./assets/images/brad-pitt.jpeg"
+                alt=""
+              />
+              <h2 class="user-name">brad pitt</h2>
+              <address class="user-adress">
+                california, <span>usa</span>.
+              </address>
+            </header>
+            <div class="container-btn">
+              <a href="">follow</a>
+              <a href="">send message</a>
+            </div>
+            <p class="user-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </section>
+          <footer>
+            <ul class="social-list">
+              <li><a href="">fb</a></li>
+              <li><a href="">fb</a></li>
+              <li><a href="">fb</a></li>
+            </ul>
+          </footer>
+        </article>
+      </div>
+    </section>
+  </body>
 </html>
