@@ -11,50 +11,101 @@ a{
     color: inherit;
     text-decoration: none;
 }
-img{
-    width: 100%;
+body{
+    background-color: black;
 }
-.cards-container{
-    margin: auto;
-    background-color: pink;
-}
-.flex-wrapper{
-    display: flex;
-    justify-content: space-around; 
-}
-.user-card{
-    flex: 0 0  calc(4*var(--size-avatar));
-    padding-top: var(--size-avatar);
-    background-color: var(--bg-color-card);
+h1,
+p{
     text-align: center;
 }
-.user-info{
+h1{
+    color: #a8877c;
+    margin: 0;
+    padding-top: 30px;
+    position: relative;
+}
+h1::after{
+    position: absolute;
+    width: 100px;
+    top: 50%;
+    left: 10%;
+    content: '';
+    background-color: #d5d5d5;
+    height: 2px;
+    display: block;
+}
+h1::before{
+    position: absolute;
+    width: 100px;
+    bottom: 50%;
+    right: 10%;
+    content: '';
+    background-color: #d5d5d5;
+    height: 2px;
+    display: block;
+}
+.create{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.register{
+    margin: auto;
+    margin-top: 100px;
+    padding: 50px 0 10px 0;
+    width: 30%;
+    background-color: #63748b;
+}
+.section{
+    margin: auto;
+    width: 80%;
     background-color: white;
+    font-size: 15px;
+    height: 500px;
 }
-.user-avatar{
-    width: var(--size-avatar);
-    height: var(--size-avatar);
-    margin-top: calc(-0.5*var(--size-avatar));
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: top;
+.form{
+    color: #a7aabc;
+    margin: auto;
+    width: 80%;
+    height: 450px;
+    /* display: flex;
+    flex-direction: column; */
+    align-items: center;
 }
-.user-name{
-
+.name{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
 }
-.user-adress{
-
+::placeholder{
+    padding-left: 10px;
 }
-.user-header,
-.container-btn{
-    text-transform: capitalize;
+.name>input{
+    width: 46%;
 }
-.container-btn{
-
+.name2{
+    display: flex;
+    flex-direction: column;
 }
-.user-discription{
-
+label>a{
+    color: #5cb86a;
 }
-.social-list{
-
+.white-text{
+    color: white;
+}
+.white-text>a{
+    text-decoration: underline;
+}
+input{
+    height: 40px;
+    margin-bottom: 20px;
+}
+label>input{
+    height: 15px;
+}
+button{
+    width: 100%;
+    height: 40px;
+    background-color: #46a146;
+    color: white;
+    font-size: 20px;
 }

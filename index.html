@@ -4,44 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <section class="cards-container">
-      <h1>Users cards</h1>
-      <div class="flex-wrapper">
-        <article class="user-card">
-          <section class="user-info">
-            <header class="user-header">
-              <img
-                class="user-avatar"
-                src="./assets/images/brad-pitt.jpeg"
-                alt=""
-              />
-              <h2 class="user-name">brad pitt</h2>
-              <address class="user-adress">
-                california, <span>usa</span>.
-              </address>
-            </header>
-            <div class="container-btn">
-              <a href="">follow</a>
-              <a href="">send message</a>
-            </div>
-            <p class="user-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            </p>
-          </section>
-          <footer>
-            <ul class="social-list">
-              <li><a href="">fb</a></li>
-              <li><a href="">fb</a></li>
-              <li><a href="">fb</a></li>
-            </ul>
-          </footer>
-        </article>
-      </div>
-    </section>
+    <div class="register">
+      <section class="section">
+          <h1>Register</h1>
+          <p class="create">Create your account. It's free and only takes a minute</p>
+          <form class="form" action="action-page">
+          <div class="name">
+            <input type="text" placeholder="First name" name="name" autofocus required />
+            <input type="text" placeholder="Last name" name="lastname" required />
+          </div>
+          <div class="name2">
+          <input type="text" placeholder="Email" name="email" required />
+          <input type="password" placeholder="Password" name="pass" required />
+          <input type="password" placeholder="Confirm Password" name="confpass" required />
+          </div>
+          <label><input type="checkbox" name="agree">I accept the <a href="">Terms of Use</a> & <a href="">Privacy Policy</a></label>
+          <button type="submit">Register Now</button>
+        </form>
+      </section>
+      <p class="white-text">
+        Already have an account? <a href="">Sign in</a>
+      </p>
+    </div>
   </body>
 </html>
