@@ -27,8 +27,8 @@ h1{
 h1::after{
     position: absolute;
     width: 100px;
-    top: 50%;
-    left: 10%;
+    top: 77%;
+    left: 13%;
     content: '';
     background-color: #d5d5d5;
     height: 2px;
@@ -37,8 +37,8 @@ h1::after{
 h1::before{
     position: absolute;
     width: 100px;
-    bottom: 50%;
-    right: 10%;
+    bottom: 20%;
+    right: 13%;
     content: '';
     background-color: #d5d5d5;
     height: 2px;
@@ -47,6 +47,7 @@ h1::before{
 .create{
     width: 100%;
     margin-bottom: 40px;
+    color: #c1cde1;
 }
 .register{
     margin: auto;
@@ -58,7 +59,7 @@ h1::before{
 .section{
     margin: auto;
     width: 80%;
-    background-color: white;
+    background-color: #f2f3f7;
     font-size: 15px;
     height: 500px;
 }
@@ -67,8 +68,6 @@ h1::before{
     margin: auto;
     width: 80%;
     height: 450px;
-    /* display: flex;
-    flex-direction: column; */
     align-items: center;
 }
 .name{
@@ -91,6 +90,7 @@ label>a{
 }
 .white-text{
     color: white;
+    font-size: 15px;
 }
 .white-text>a{
     text-decoration: underline;
@@ -107,5 +107,5 @@ button{
     height: 40px;
     background-color: #46a146;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
